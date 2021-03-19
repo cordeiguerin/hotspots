@@ -1,22 +1,129 @@
+/*  Colour palette
+--icterine (yellow): #f7f052ff;
+--princeton-orange (l-orange): #f28123ff;
+--sinopia (d-orange_: #d34e24ff;
+--eerie-black (blue-black): #272727ff;
+--sapphire (b-blue): #2b50aaff;*/
+
 /* Layout styling */
-html{
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+	width: 100vw;
+	height: 100vh;
+}
+
+body {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	grid-template-rows: 50px auto 1fr 30px;
+}
+
+header{
+	grid-area: 1/1/2/-1;
+	background-color: #d34e24ff;
+}
+
+.cover{
+	grid-area: 2/1/3/-1;
+	background-color: #f28123ff;
+	padding: 2% 5%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.content-container{
+	grid-area: 3/1/4/-1;
+	background-color: #f7f052ff;
+}
+
+footer{
+	grid-area: 4/1/5/-1;
+	background-color: #d34e24ff;
+}
+
+/*Animated Button Styling*/
+
+.art {
+
+}
+
+.geography {
+
+}
+
+.history {
+
+}
+
+.maths {
+
+}
+
+.mfl {
+
+}
+
+.science {
 	
-};
-
-body{};
-
-header{};
-
-.cover{};
-
-.content-container{};
-
-footer{};
+}
 
 /* Font and text styling */
-h1{};
+h1{
+	font-size: 4rem;
+	font-family: 'Trade Winds', cursive;
+	color: white;
+}
 
-p{};
+h2{
+	font-size: 1.75rem;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	text-align: right;
+}
 
 /* Image styling */
-#logo{};
+#logo{
+
+}
+
+
+/* Mobile Styling */
+
+@media only screen and (max-width: 900px) {
+	.cover {
+		display: block;
+	}
+
+	.cover > h2 {
+		text-align: right;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+
+	/* Font and text styling */
+	h1{
+		font-size: 3rem;
+	}
+
+	h2{
+		font-size: 1.5rem;
+	}
+
+}
+
+@media only screen and (max-width: 450px) {
+
+	/* Font and text styling */
+	h2{
+		font-size: 0.75rem;
+	}
+
+}
