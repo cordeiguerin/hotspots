@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hotspots</title>
+	<!-- Meta tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	
+	<!-- External stylesheets and scripts -->
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="jupiter.css">
+	
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Trade+Winds&display=swap" rel="stylesheet">
+	
+</head>
+<body>
+	<header></header>
+	<div class="cover">
+		<h1>Hotspots</h1>
+		<h2>Science</h2>
+	</div>
+	<div class="content-container">
+		<div class="i-img jupiter" id="app-jupiter">
+			<h1>{{title}}</h1>
+			<h2>{{message}}</h2>
+			<div class="box">
+				<!-- make mask of Planet Clickable, shadow on hover and change text to show info -->
+				<div v-on:click="infoSize" class="planet-mask"></div>
+				<div class="planet">
+				  	<div class="stripe1"></div>
+				    <div class="little-red-spot"></div>
+				    <div class="stripe2"></div>
+				    <div class="little-grey-spot"></div>
+					<!-- make mask of Planet Clickable, shadow on hover and change text to show info -->
+					<div v-on:click="infoClouds" class="stripe3-mask"></div>
+				    <div class="stripe3"></div>
+				    <div class="stripe3-trap"></div>
+					<!-- make mask of Planet Clickable, shadow on hover and change text to show info -->
+					<div v-on:click="infoRings" class="stripe4-mask"></div>
+				    <div class="stripe4"></div>
+
+				    <div class="stripe5"></div>
+				    <div class="stripe6"></div>
+				    <div class="stripe6-bump"></div>
+				    <div class="bump-inner"></div>
+				    <div class="stripe7"></div>
+				    <div class="stripe7-trap"></div>				 
+				    <!-- make mask of Big Red Spot Clickable, shadow on hover and change text to show info -->
+				    <div v-on:click="infoGRS" class="big-red-spot-mask"></div>
+				    <div class="big-red-spot"></div>
+				    
+				    <div class="big-red-spot-centre"></div>
+				    <div class="stripe8"></div>
+				 
+				    <!-- make mask of Big Red Spot Clickable, shadow on hover and change text to show info -->
+				    <div v-on:click="infoMoons" class="dot1-mask"></div>
+				    <div class="dot1"></div>
+				    
+				    <div class="dot2"></div>
+				    <div class="dot3"></div>
+				    <div class="stripe9"></div>
+				</div>
+				<div class="shadow"></div>
+			</div>
+		</div>
+	</div>
+	<footer><p>Website by Cordelia Guerin, 2021</p></footer>
+
+	<!-- Script references at end of body to reduce loading times -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script> 
+	<script src="jupiter.js"></script>
+</body>
+</html>
