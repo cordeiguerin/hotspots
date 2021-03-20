@@ -301,7 +301,7 @@ div[class*="mask"]:hover {
 
 
 /*Text Styling*/
-h1 {
+.jupiter > h1 {
   color: white;
   text-align: center;
   font-size: 6em;
@@ -309,7 +309,7 @@ h1 {
   padding-top: 50px;
 }
 
-h2 {
+.jupiter> h2 {
   color: white;
   text-align: center;
   font-size: 4em;
