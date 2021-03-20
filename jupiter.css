@@ -304,7 +304,7 @@ div[class*="mask"]:hover {
 .jupiter > h1 {
   color: white;
   text-align: center;
-  font-size: 6em;
+  font-size: 5em;
   font-family: "Trade Winds", cursive;
   padding-top: 50px;
 }
@@ -312,7 +312,7 @@ div[class*="mask"]:hover {
 .jupiter> h2 {
   color: white;
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   font-family: "Trade Winds", cursive;
 }
 
