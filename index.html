@@ -8,6 +8,7 @@
 	
 	<!-- External stylesheets and scripts -->
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="jupiter.css">
 	
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,68 +19,57 @@
 	<header></header>
 	<div class="cover">
 		<h1>Hotspots</h1>
-		<h2>Interactive, Engaging and Informative<br>Hotspot Images, Games and Revision Aids</h2>
+		<h2>Science</h2>
 	</div>
 	<div class="content-container">
-		<div class="subject-btn">
-			<div class="zone art"></div>
-			Art and Design</div>
-		<div class="subject-btn">
-			<div class="zone geography"></div>
-			Geography</div>
-		<div class="subject-btn">
-			<div class="history">
-				<div class="clock">
-			        <div class="face">
-			            <div class="twelve"></div>
-			            <div class="one"></div>
-			            <div class="two"></div>
-			            <div class="three"></div>
-			            <div class="four"></div>
-			            <div class="five"></div>
-			            <div class="six"></div>
-			            <div class="seven"></div>
-			            <div class="eight"></div>
-			            <div class="nine"></div>
-			            <div class="ten"></div>
-			            <div class="eleven"></div>
-			            <div class="pivot"></div>
-			            <div class="l-hand"></div>
-			            <div class="b-hand"></div>
-			        </div>
-			    </div>
+		<div class="i-img jupiter" id="app-jupiter">
+			<h1>{{title}}</h1>
+			<h2>{{message}}</h2>
+			<div class="box">
+				<!-- make mask of Planet Clickable, shadow on hover and change text to show info -->
+				<div v-on:click="infoSize" class="planet-mask"></div>
+				<div class="planet">
+				  	<div class="stripe1"></div>
+				    <div class="little-red-spot"></div>
+				    <div class="stripe2"></div>
+				    <div class="little-grey-spot"></div>
+					<!-- make mask of Planet Clickable, shadow on hover and change text to show info -->
+					<div v-on:click="infoClouds" class="stripe3-mask"></div>
+				    <div class="stripe3"></div>
+				    <div class="stripe3-trap"></div>
+					<!-- make mask of Planet Clickable, shadow on hover and change text to show info -->
+					<div v-on:click="infoRings" class="stripe4-mask"></div>
+				    <div class="stripe4"></div>
+
+				    <div class="stripe5"></div>
+				    <div class="stripe6"></div>
+				    <div class="stripe6-bump"></div>
+				    <div class="bump-inner"></div>
+				    <div class="stripe7"></div>
+				    <div class="stripe7-trap"></div>				 
+				    <!-- make mask of Big Red Spot Clickable, shadow on hover and change text to show info -->
+				    <div v-on:click="infoGRS" class="big-red-spot-mask"></div>
+				    <div class="big-red-spot"></div>
+				    
+				    <div class="big-red-spot-centre"></div>
+				    <div class="stripe8"></div>
+				 
+				    <!-- make mask of Big Red Spot Clickable, shadow on hover and change text to show info -->
+				    <div v-on:click="infoMoons" class="dot1-mask"></div>
+				    <div class="dot1"></div>
+				    
+				    <div class="dot2"></div>
+				    <div class="dot3"></div>
+				    <div class="stripe9"></div>
+				</div>
+				<div class="shadow"></div>
 			</div>
-			History</div>
-		<div class="subject-btn">
-			<div class="zone maths"></div>
-			Maths</div>
-		<div class="subject-btn">
-			<div class="mfl">
-			    <div class="flag">
-			        <div class="fr-blue"></div>
-			        <div class="fr-white"></div>
-			        <div class="fr-red"></div>
-			    </div>
-			</div>
-			MFL</div>
-		<div class="subject-btn">
-			<div class="science">
-			    <div class="rb-flask-base">
-			        <div class="liquid">
-			            <div class="liquid-mask"></div>
-			        </div>
-			        <div class="base-mask"></div>
-			    </div>
-			    <div class="rb-flask-neck"></div>
-			    <div class="rb-flask-lip"></div>
-			    <div class="bung"></div>
-			    <div class="bubble-liq-big"></div>
-			    <div class="bubble-liq-small"></div>
-			    <div class="bubble-air-big"></div>
-			    <div class="bubble-air-small"></div>	
-			</div>
-			Science</div>
+		</div>
 	</div>
-	<footer></footer>
+	<footer><p>Website by Cordelia Guerin, 2021</p></footer>
+
+	<!-- Script references at end of body to reduce loading times -->
+	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script> 
+	<script src="jupiter.js"></script>
 </body>
 </html>
