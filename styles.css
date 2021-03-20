@@ -49,6 +49,7 @@ header{
 footer{
 	grid-area: 4/1/5/-1;
 	background-color: #d34e24ff;
+	padding-top: 2%;
 }
 
 /*Animated Button Styling*/
