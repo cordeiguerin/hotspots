@@ -1,0 +1,329 @@
+body {
+  background: #222;
+  width: 100vw;
+  height: 100vh;
+}
+
+.jupiter {
+  background-color: #222;
+}
+
+.box {
+  background: #222;
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  left: -1%;
+}
+
+.planet {
+  background: #E2E8CE;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  top: 10%;
+  left: 10%;
+  overflow: hidden;
+}
+
+.planet-mask {
+  background: none;
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  top: 10%;
+  left: 10%;
+  overflow: hidden;
+  z-index: 6;
+}
+
+.stripe1 {
+  position: absolute;
+  background: #B5ADB0;
+  width: 100%;
+  height: 20%;
+  z-index: 1;
+}
+
+.stripe2 {
+  position: absolute;
+  background: #B5ADB0;
+  width: 100%;
+  height: 5%;
+  top: 23%;
+  z-index: 1;
+}
+
+.stripe3-mask {
+  position: absolute;
+  background: none;
+  width: 100%;
+  height: 5%;
+  top: 35%;
+  z-index: 6;
+}
+
+.stripe3 {
+  position: absolute;
+  background: #A66762;
+  width: 100%;
+  height: 5%;
+  top: 35%;
+  z-index: 1;
+}
+
+.stripe4-mask {
+  position: absolute;
+  background: none;
+  width: 100%;
+  height: 13%;
+  top: 40%;
+  z-index: 6;
+}
+
+.stripe4 {
+  position: absolute;
+  background: #F6B57B;
+  width: 100%;
+  height: 13%;
+  top: 40%;
+  z-index: 1;
+}
+
+.stripe5 {
+  position: absolute;
+  background: #F6B57B;
+  width: 100%;
+  height: 4%;
+  top: 58%;
+  z-index: 1;
+}
+
+.stripe6 {
+  position: absolute;
+  background: #A66762;
+  width: 100%;
+  height: 2%;
+  top: 65%;
+  z-index: 1;
+}
+
+.stripe7 {
+  position: absolute;
+  background: #F6B57B;
+  width: 100%;
+  height: 2%;
+  bottom: 17%;
+  z-index: 1;
+}
+
+.stripe8 {
+  position: absolute;
+  background: #B5ADB0;
+  width: 100%;
+  height: 5%;
+  bottom: 11%;
+  z-index: 1;
+}
+
+.stripe9 {
+  position: absolute;
+  background: #F6B57B;
+  width: 100%;
+  height: 11%;
+  bottom: 0%;
+  z-index: 1;
+}
+
+.stripe3-trap {
+  position: absolute;
+  background: #A66762;
+  width: 40%;
+  height: 9%;
+  top: 39%;
+  right: 0%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
+  z-index: 2;
+}
+
+.stripe6-bump {
+  position: absolute;
+  background: #A66762;
+  width: 33%;
+  height: 54%;
+  bottom: 34%;
+  right: 25%;
+  clip-path: ellipse(48% 13% at 50% 100%);
+  z-index: 2;
+}
+
+.stripe7-trap {
+  position: absolute;
+  background: #F6B57B;
+  width: 80%;
+  height: 7%;
+  bottom: 17%;
+  left: 0%;
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+  z-index: 2;
+}
+
+.bump-inner {
+  position: absolute;
+  background: #E2E8CE;
+  width: 31%;
+  height: 52%;
+  bottom: 32%;
+  right: 26%;
+  clip-path: ellipse(48% 13% at 50% 100%);
+  z-index: 3;
+}
+
+.little-red-spot {
+  position: absolute;
+  background: #C25D32;
+  width: 7%;
+  height: 3%;
+  top: 16%;
+  right: 31%;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.little-grey-spot {
+  position: absolute;
+  background: #E2E8CE;
+  width: 9%;
+  height: 3%;
+  top: 24%;
+  left: 21%;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.big-red-spot {
+  position: absolute;
+  background: #C25D32;
+  width: 20%;
+  height: 10%;
+  bottom: 27%;
+  right: 31%;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.big-red-spot-mask {
+  position: absolute;
+  background: none;
+  width: 20%;
+  height: 10%;
+  bottom: 27%;
+  right: 31%;
+  border-radius: 50%;
+  z-index: 6;
+}
+
+
+.big-red-spot-centre {
+  position: absolute;
+  background: #A66762;
+  width: 10%;
+  height: 5%;
+  bottom: 30%;
+  right: 38%;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.dot1-mask {
+  position: absolute;
+  background: none;
+  width: 3%;
+  height: 3%;
+  bottom: 19%;
+  left: 23%;
+  border-radius: 50%;
+  z-index: 6;
+}
+
+.dot1 {
+  position: absolute;
+  background: #E2E8CE;
+  width: 3%;
+  height: 3%;
+  bottom: 19%;
+  left: 23%;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.dot2 {
+  position: absolute;
+  background: #E2E8CE;
+  width: 3%;
+  height: 3%;
+  bottom: 15%;
+  left: 18%;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.dot3 {
+  position: absolute;
+  background: #E2E8CE;
+  width: 3%;
+  height: 3%;
+  bottom: 10%;
+  left: 25%;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.shadow {
+  position: absolute;
+  background-image: radial-gradient(rgba(23, 21, 17, 0) 65%, rgba(23, 21, 17, 0.9) 70%, #171511);
+  width: 81%;
+  height: 81%;
+  top: 9.5%;
+  left: 9.5%;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+/*Make all div which contain "mask" have a shadow on hover*/
+div[class*="mask"]:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/*Text Styling*/
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 6em;
+  font-family: "Trade Winds", cursive;
+  padding-top: 50px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: 4em;
+  font-family: "Trade Winds", cursive;
+}
+
+
+/*Mobile Styling*/
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
