@@ -29,24 +29,20 @@ body {
   overflow: hidden;
 }
 
-.planet-mask {
-  background: none;
-  position: absolute;
-  width: 80%;
-  height: 80%;
-  border-radius: 50%;
-  top: 10%;
-  left: 10%;
-  overflow: hidden;
-  z-index: 6;
-}
-
 .stripe1 {
   position: absolute;
   background: #B5ADB0;
   width: 100%;
   height: 20%;
   z-index: 1;
+}
+
+.stripe1-mask {
+  position: absolute;
+  background: none;
+  width: 100%;
+  height: 20%;
+  z-index: 6;
 }
 
 .stripe2 {
